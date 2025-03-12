@@ -12,9 +12,9 @@ var kDarkColorScheme = ColorScheme.fromSeed(
 );
 
 void main() {
-  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]).then((
-    fn,
-  ) {
+  // SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]).then((
+  //   fn,
+  // ) {q
     runApp(
       MaterialApp(
         darkTheme: ThemeData.dark().copyWith(
@@ -61,5 +61,5 @@ void main() {
         home: Expenses(),
       ),
     );
-  });
+ // });
 }
