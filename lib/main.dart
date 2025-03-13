@@ -20,6 +20,7 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //test 
     return MaterialApp(
       theme: theme,
       home: Column(children: [Text('Meals App')]),
