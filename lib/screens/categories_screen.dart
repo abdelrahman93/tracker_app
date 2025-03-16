@@ -9,11 +9,9 @@ import 'package:tracker_app/widgets/categories/category_grid_item.dart';
 class CategoriesScreen extends StatelessWidget {
   const CategoriesScreen({
     super.key,
-    required this.onToggleFavorite,
     required this.availableMeals,
   });
 
-  final void Function(Meal meal) onToggleFavorite;
   final List<Meal> availableMeals;
   void _selectedCategory(BuildContext context, CategoryModel category) {
     final filteredMeals =
@@ -28,7 +26,6 @@ class CategoriesScreen extends StatelessWidget {
             (ctx) => MealsScreen(
               title: category.title,
               meals: filteredMeals,
-              onToggleFavorite: onToggleFavorite,
             ),
       ),
     );
