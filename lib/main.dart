@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
-import 'package:tracker_app/widgets/categories/categories_screen.dart';
+import 'package:tracker_app/screens/categories_screen.dart';
+import 'package:tracker_app/screens/tabs.dart';
 
 final theme = ThemeData(
   useMaterial3: true,
@@ -24,7 +25,7 @@ class App extends StatelessWidget {
     //test 
     return MaterialApp(
       theme: theme,
-      home: const CategoriesScreen(),
+      home:  TabScreen(),
     );
   }
 }
